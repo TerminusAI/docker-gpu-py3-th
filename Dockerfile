@@ -6,7 +6,10 @@ ARG THEANO_VERSION=rel-0.8.2
 
 # new system dependencies
 RUN apt-get update && \
-    apt-get install -y g++ libblas-dev git && \
+    apt-get install -y --no-install-recommends \
+        g++ \
+        libblas-dev \
+        git && \
 	apt-get clean && \
 	apt-get autoremove && \
 	rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
