@@ -17,6 +17,7 @@ RUN apt-get update && \
 
 # new python dependencies
 RUN pip --no-cache-dir install \
+        matplotlib \
         numpy \
         scipy \
         nose
