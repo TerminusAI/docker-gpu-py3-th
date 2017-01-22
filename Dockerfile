@@ -19,6 +19,9 @@ RUN apt-get update && \
 RUN pip --no-cache-dir install \
         matplotlib \
         numpy \
+	pandas \
+	pillow \
+	scikit-image \
         scipy \
         nose
 
