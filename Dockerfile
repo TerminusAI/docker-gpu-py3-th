@@ -2,7 +2,7 @@ FROM terminus7/gpu-py3
 
 MAINTAINER Luis Mesas <luis.mesas@intelygenz.com>
 
-ARG THEANO_VERSION=rel-0.8.2
+ARG THEANO_VERSION=rel-0.9.0
 
 # new system dependencies
 RUN apt-get update && \
