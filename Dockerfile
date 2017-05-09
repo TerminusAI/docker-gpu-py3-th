@@ -28,7 +28,7 @@ RUN pip --no-cache-dir install \
 # Theano
 RUN pip install --no-deps git+git://github.com/Theano/Theano.git@${THEANO_VERSION} && \
 	\
-	echo "[global]\ndevice=gpu\nfloatX=float32\noptimizer_including=cudnn\nmode=FAST_RUN \
+	echo "[global]\ndevice=cuda\nfloatX=float32\noptimizer_including=cudnn\nmode=FAST_RUN \
 	    \n[lib]\ncnmem=0.95\n \
 		\n[nvcc]\nfastmath=True\n \
 		\n[DebugMode]\ncheck_finite=1" \
